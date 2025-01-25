@@ -166,8 +166,8 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          android-recovery/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/${{ env.BUILD_TARGET_NAME }}.img
-          android-recovery/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/PBRP*.zip
+          android-recovery/out/target/product/alioth/${{ env.BUILD_TARGET_NAME }}.img
+          android-recovery/out/target/product/alioth/PBRP*.zip
         name: Unofficial PBRP for ${{ github.event.inputs.DEVICE_NAME }} // ${{ env.BUILD_DATE }}
         tag_name: ${{ github.run_id }}
         body: |
