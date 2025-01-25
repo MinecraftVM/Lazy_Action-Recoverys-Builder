@@ -155,7 +155,7 @@ jobs:
         elif [ -f out/target/product/${{ env.DEVICE_NAME }}/boot.img ]; then
             echo "BUILD_TARGET_NAME=boot" >> $GITHUB_ENV
         else
-            echo "BUILD_TARGET_NAME=vendor_boot" >> $GITHUB_ENV
+            echo "BUILD_TARGET_NAME=boot" >> $GITHUB_ENV
         fi
 
     - name: Set Build Date # Output will be use in Release
