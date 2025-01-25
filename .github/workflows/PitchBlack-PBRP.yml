@@ -183,9 +183,9 @@ jobs:
       uses: softprops/action-gh-release@master
       with:
         files: |
-          android-recovery/out/target/product/${{ env.DEVICE_NAME }}/${{ env.BUILD_TARGET_NAME }}.img
-          android-recovery/out/target/product/${{ env.DEVICE_NAME }}/PBRP*.zip
-          android-recovery/out/target/product/${{ env.DEVICE_NAME }}/ramdisk-recovery.*
+          android-recovery/out/target/product/alioth/${{ env.BUILD_TARGET_NAME }}.img
+          android-recovery/out/target/product/alioth/PBRP*.zip
+          android-recovery/out/target/product/alioth/ramdisk-recovery.*
         name: Unofficial PBRP for ${{ env.DEVICE_NAME }} // ${{ env.BUILD_DATE }}
         tag_name: ${{ github.run_id }}
         body: |
