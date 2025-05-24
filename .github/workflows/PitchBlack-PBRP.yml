@@ -138,7 +138,7 @@ jobs:
 
     - name: Set python to python2
       run: |
-        sudo apt-get install python-is-python2
+        sudo ln -s /bin/python2 /usr/bin/python
 
     - name: Building Image
       run: |
