@@ -14,15 +14,15 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/byf3332/Xiaomi-Archimedes-device-tree'
+        default: 'https://github.com/sekaiacg/device_xiaomi_alioth-TWRP'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'main'
+        default: 'android-13'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/xiaomi/Archimedes'
+        default: 'device/xiaomi/alioth'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
@@ -32,7 +32,7 @@ on:
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'Archimedes'
+        default: 'thyme'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
